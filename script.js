@@ -23,4 +23,12 @@ function changeBottomRight(){
 
 }
 
+function changeBottomLeft(){
+    let bottomLeftController = document.getElementById("bottomLeftSlider");
+    let bottomLeftRadius = document.getElementById("box");
+
+    bottomLeftRadius.style.borderBottomLeftRadius = bottomLeftController.value + "%";
+
+}
+
 
