@@ -116,14 +116,14 @@ body{
 
 
 /*Bloco superior ++ */
-#topslider{
+#bottomRightSlider{
     z-index:3;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -7945%);
+    transform: rotate(180deg) translate(50%, -7945%);
 }
 
-#topslider::-webkit-slider-thumb:hover{
+#bottomRightSlider::-webkit-slider-thumb:hover{
     background: #fbbc05;
 }
 /*Bloco superior -- */

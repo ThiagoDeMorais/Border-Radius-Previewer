@@ -15,4 +15,12 @@ function changeTopRight(){
 
 }
 
+function changeBottomRight(){
+    let bottomRightController = document.getElementById("bottomRightSlider");
+    let bottomRightRadius = document.getElementById("box");
+
+    bottomRightRadius.style.borderBottomRightRadius = bottomRightController.value + "%";
+
+}
+
 
