@@ -26,7 +26,10 @@ body{
     height: 300px;
     background-color: darkolivegreen;
     /*border-radius: 100% 0% 0% 0%/ 0% 100% 100% 100% ; */
-    border-radius: 0% 0% 0% 0% ;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0% ;
 }
 /*Quadrado com propriedade radius que será alterada pelo usuário --*/
 
@@ -76,7 +79,7 @@ body{
 
 
 /*Bloco direito ++ */
-  #rightslider{
+  #leftslider{
     transform:rotate(90deg);
     z-index: 2;
     right: 50%;
@@ -88,7 +91,7 @@ body{
     */ 
 }
 
-#rightslider::-webkit-slider-thumb:hover{
+#leftslider::-webkit-slider-thumb:hover{
     background: #4285f4;
 
 }
@@ -96,7 +99,7 @@ body{
 
 
 /*Bloco esquerdo ++ */
-#leftslider{
+#rightslider{
     transform:rotate(90deg);
     z-index: 2;
     left: 50%;
@@ -105,7 +108,7 @@ body{
 }
 
 
-#leftslider::-webkit-slider-thumb:hover{
+#rightslider::-webkit-slider-thumb:hover{
     background: #34a853;
 
 }
