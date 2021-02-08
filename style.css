@@ -79,7 +79,7 @@ body{
 
 
 /*Bloco direito ++ */
-  #leftslider{
+  #topLeftSlider{
     transform:rotate(90deg);
     z-index: 2;
     right: 50%;
@@ -91,7 +91,7 @@ body{
     */ 
 }
 
-#leftslider::-webkit-slider-thumb:hover{
+#topLeftSlider::-webkit-slider-thumb:hover{
     background: #4285f4;
 
 }
@@ -99,7 +99,7 @@ body{
 
 
 /*Bloco esquerdo ++ */
-#rightslider{
+#topRightslider{
     transform:rotate(90deg);
     z-index: 2;
     left: 50%;
@@ -108,7 +108,7 @@ body{
 }
 
 
-#rightslider::-webkit-slider-thumb:hover{
+#topRightslider::-webkit-slider-thumb:hover{
     background: #34a853;
 
 }
