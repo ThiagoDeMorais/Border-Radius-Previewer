@@ -59,6 +59,7 @@ body{
     background: #b4bdb4;
     cursor: pointer;
     pointer-events: all;
+    
   }
 
  
@@ -92,8 +93,8 @@ body{
 }
 
 #topLeftSlider::-webkit-slider-thumb:hover{
-    background: #4285f4;
-
+    background-color: #4285f4;
+    background-image: url(/ARROW-LT.png);
 }
 /*Bloco superior esquerdo -- */
 
@@ -110,6 +111,7 @@ body{
 
 #topRightslider::-webkit-slider-thumb:hover{
     background: #34a853;
+    background-image: url(/ARROW-RT.png);
 
 }
 /*Bloco superior direito -- */
@@ -125,6 +127,8 @@ body{
 
 #bottomRightSlider::-webkit-slider-thumb:hover{
     background: #fbbc05;
+    background-image: url(/ARROW-RB.png);
+
 }
 /*Bloco inferior direito -- */
 
@@ -140,5 +144,6 @@ body{
 
 #bottomLeftSlider::-webkit-slider-thumb:hover{
     background: #ea4335;
+    background-image: url(/ARROW-LB.png);
 }
 /*Bloco inferior esquerdo -- */
