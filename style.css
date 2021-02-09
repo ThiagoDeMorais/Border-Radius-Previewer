@@ -100,7 +100,7 @@ body{
 
 
 /*Bloco superior direito ++ */
-#topRightslider{
+#topRightSlider{
     transform:rotate(90deg);
     z-index: 2;
     left: 50%;
@@ -109,7 +109,7 @@ body{
 }
 
 
-#topRightslider::-webkit-slider-thumb:hover{
+#topRightSlider::-webkit-slider-thumb:hover{
     background: #34a853;
     background-image: url(/ARROW-RT.png);
 
@@ -147,3 +147,27 @@ body{
     background-image: url(/ARROW-LB.png);
 }
 /*Bloco inferior esquerdo -- */
+
+
+output{
+    color: cornsilk;
+    display: inline-block;
+}
+
+label{
+    color: cornsilk;
+}
+
+#areaButton{
+    margin-top: 10px;
+    height: 300px;
+    width: 385px;
+    border: solid;
+    border-color:ivory;
+}
+
+#containerText{
+    margin-top: 50px;
+    text-align: center;
+
+}
