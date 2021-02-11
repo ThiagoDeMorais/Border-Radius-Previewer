@@ -5,14 +5,17 @@ body{
     background-color: rgb(0, 4, 8);
 }
 
+#containerFather{
+    text-align: center;
+    padding: 15px 75px 75px 75px;
+    margin: auto;
+    width: 900px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
 #container{
-    margin: 0px;
-    padding: 0px;
-    z-index: 1;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); 
+    margin: auto;
     width: 315px;
     height: 315px;
     border-style: dotted;
@@ -43,7 +46,7 @@ body{
     outline: none;
     height:2px;
     -webkit-appearance: none;
-    width: 315px;
+    width: 319px;
     pointer-events: none;/*desativa todos os elementos do slider como alvo de click*/
 }
 /*classe dos blocos --*/
@@ -81,15 +84,7 @@ body{
 
 /*Bloco superior esquerdo ++ */
   #topLeftSlider{
-    transform:rotate(90deg);
-    z-index: 2;
-    right: 50%;
-    bottom: 50%;
-     /*
-    left: 50%; Inverti pois apos a rotação a referencia tbm inverte;
-    top: 50%; Inverti pois apos a rotação a referencia tbm inverte;
-    transform: translate(-50%, -50%);
-    */ 
+    z-index: 0;
 }
 
 #topLeftSlider::-webkit-slider-thumb:hover{
@@ -101,11 +96,9 @@ body{
 
 /*Bloco superior direito ++ */
 #topRightSlider{
-    transform:rotate(90deg);
-    z-index: 2;
-    left: 50%;
-    top: 50%;
- 
+    transform: rotate(180deg);
+    z-index: 1;
+
 }
 
 
@@ -119,10 +112,11 @@ body{
 
 /*Bloco inferior direito ++ */
 #bottomRightSlider{
-    z-index:3;
-    bottom: 50%;
-    left: 50%;
-    transform: rotate(180deg) translate(51%, -7945%);
+    z-index:0;
+    transform: rotate(180deg);
+  ;
+    
+
 }
 
 #bottomRightSlider::-webkit-slider-thumb:hover{
@@ -135,10 +129,7 @@ body{
 
 /*Bloco inferior esquerdo ++ */
 #bottomLeftSlider{
-    z-index:3;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-49%, 7945%);
+    z-index:1;
 }
  
 
@@ -158,16 +149,32 @@ label{
     color: cornsilk;
 }
 
-#areaButton{
-    margin-top: 10px;
-    height: 300px;
-    width: 385px;
-    border: solid;
-    border-color:ivory;
-}
+
 
 #containerText{
     margin-top: 50px;
     text-align: center;
 
+}
+
+#rightContainer{
+    position: relative;
+    padding: 5px;
+    float: right;
+    background-color: black;
+}
+
+#leftContainer{
+    
+    float: left;
+}
+
+#inferiorButtons{
+    position: absolute;
+    bottom: 2.7%;
+}
+
+#superiorButtons{
+    position: absolute;
+    top: 2%;
 }

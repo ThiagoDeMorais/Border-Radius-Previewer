@@ -1,8 +1,4 @@
 function valuesInicialization(){
-    document.getElementById("topLeftResult").value = 0 + "%";
-    document.getElementById("topRightResult").value = 0 + "%";
-    document.getElementById("bottomRightResult").value = 0 + "%";
-    document.getElementById("bottomLeftResult").value = 0 + "%";
     textAreaWrite();
 }
 

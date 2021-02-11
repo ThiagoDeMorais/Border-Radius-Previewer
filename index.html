@@ -10,46 +10,33 @@
 <body onload="valuesInicialization()">
 
     <div id="containerFather">
+        <h1>Visualizador de raio de borda</h1>
 
-
-        <form id="firstForm" oninput="topLeftResult.value = topLeftSlider.value + '%'">
-        <input oninput="changeTopLeft()" class="slider" id="topLeftSlider"  name="topLeftSlider" min="0" max="100" type="range" value="0" step="1">
-        <label for="topLeftResult"> Raio da Borda Superior Esquerda: </label>
-        <output id="topLeftResult" name="topLeftResult" form="firstForm" for="topLeftSlider"></output>
-        </form>
-
-        <form id="secondForm" oninput="topRightResult.value = topRightSlider.value + '%'">    
-        <input oninput="changeTopRight()" class="slider" id="topRightSlider"  name="topRightSlider" min="0" max="100" type="range" value="0" step="1">
-        <label for="topRightResult"> Raio da Borda Superior Direita: </label>
-        <output id="topRightResult" name="topRightResult" form="secondForm" for="topRightSlider"></output>
-        </form>
-       
-        <form id="thirdForm" oninput="bottomRightResult.value = bottomRightSlider.value + '%' ">
-        <input oninput="changeBottomRight()" class="slider" id="bottomRightSlider"  name="bottomRightSlider" min="0" max="100" type="range" value="0" step="1">
-        <label for="bottomRightResult">Raio da Borda Inferior Direita: </label>
-        <output id="bottomRightResult" name="bottomRightResult" form="thirdForm" for="bottomRightSlider"></output>
-        </form>
-
-        <form id="fourthForm" oninput="bottomLeftResult.value = bottomLeftSlider.value + '%' ">
-        <input oninput="changeBottomLeft()" class="slider" id="bottomLeftSlider"  name="bottomLeftSlider" min="0" max="100" type="range" value="0" step="1">
-        <label for="bottomLeftResult">Raio da Borda Inferior Esquerda: </label>
-        <output id="bottomLeftResult" name="bottomLeftResult" form="fourthForm" for="bottomLeftSlider"></output>
-        </form>
-
-        <div id="areaButton">
-            <label for="buttonCopy">Copiar configurações para a área de transferência</label>
-            <button onclick="copyToClipboard()" id="buttonCopy">Copiar</button>
-            <div id = "containerText">
-                <textarea name="areaText" id="areaText" cols="45" rows="10" ></textarea>
+        <div id="rightContainer">
+            <div id="superiorButtons">
+                <input oninput="changeTopLeft()" class="slider" id="topLeftSlider"  name="topLeftSlider" min="0" max="100" type="range" value="0" step="1">
+                <input oninput="changeTopRight()" class="slider" id="topRightSlider"  name="topRightSlider" min="0" max="100" type="range" value="0" step="1">
             </div>
+
+            <div id="inferiorButtons">
+                <input oninput="changeBottomRight()" class="slider" id="bottomRightSlider"  name="bottomRightSlider" min="0" max="100" type="range" value="0" step="1">
+                <input oninput="changeBottomLeft()" class="slider" id="bottomLeftSlider"  name="bottomLeftSlider" min="0" max="100" type="range" value="0" step="1">
+            </div>
+
+            <div id="container">
+                <div id="box">
+
+                </div>
+           </div>
         </div>
 
+        <div id="leftContainer">  
+            <div id = "containerText">
+                <textarea name="areaText" id="areaText" cols="35" rows="10" ></textarea>
+            </div>  
+            <button onclick="copyToClipboard()">Copiar</button>         
+       </div>
 
-        <div id="container">
-            <div id="box">
-    
-            </div>
-     </div>
     </div>
 
 <script src="script.js"></script>    
